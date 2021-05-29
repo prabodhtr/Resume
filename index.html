@@ -1,0 +1,132 @@
+<!-- html version: here HTML:5 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- information about page given to browser.
+    whole page consists of characters encoded in UTF-8. Standard and has all international characters as that of unicode even smileys ❦.
+    When rendered incorrectly by browser it causes 'mojibake' -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- description is used by browser to know what your page is about while we search for something in it -->
+    <meta name="description" content="The website is hosted for personal understanding of a budding developer!">
+    <meta name="keywords" content="HTML, Prabodh, Personal, Developer, Udemy Bootcamp">
+    <!-- title of page which is seen in the tab -->
+    <title>❦ Prabodh's Personal Site</title>
+</head>
+
+<body>
+    <table cellspacing="20">
+        <!-- to align the image to the left of bio; so no header; Try using CSS for this afap-->
+        <tr>
+            <td>
+            <!-- alt attribute is refered by browser to know about what our page is about as well
+            src can be an address to our image in the internet or it could be a path to our image in our local system -->
+            <img src="Images/MyImage.png" alt="Prabodh Profile picture">
+            </td>
+            <td>
+                <h1>Prabodh T R</h1>
+                <p style="font-style: italic;">Graduate From NITC <br> B170371CS <br>CSED 2017-'21</p>
+                <!-- use empahsis tag than <i> tag for italics and strong tag than <b> tag for the boldness 
+                    as the later ones just styles while the prior ones give more meaning to the content -->
+                <p><em>Analyst in <strong><a href="https://www.goldmansachs.com/">Goldman Sachs</a></strong></em>. Like to read YA novels and play shadow fight in the free time. 
+                    Adventurous by nature, atleast thats what the test says!</p>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    
+    <!-- 
+        ol - ordered list
+        ul - unordered list
+        li - list item
+        a -  anchor tag. Refer MDN site for attribute info!
+             Can link to same page by giving id to different headers and href to those ids
+    -->
+    <h3>Education</h3>
+    <ul>
+        <li><a href="http://nitc.ac.in/">National Institute of Technology Calicut</a></li>
+        <ul>
+            <li>Mjaored in Computer Science and Engineering</li>
+            <li>Graduated at 2021</li>
+        </ul>
+        <li><a href="https://saps.ac.in/">St. Antony's Public School</a>, Anakkal</li>
+        <ul>
+            <li>Computer Science as the stream of choice</li>
+        </ul>
+        <li>JNV Pathanamthitta</li>
+    </ul>
+    <hr>
+
+    <!--tables : refer mdn for attributes
+        Has thead, tbody and tfoot and th, td and td for describing cells in each rows of those sections
+        Isolated likewise to enable each section to have different styles and fucntions in CSS and JS
+        Try avoiding the use of styles in HTML as its deprecated coz its the job of CSS -->
+    <h3>Work Experience</h3>
+    <table cellspacing="10">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Job</th>
+                <th>Mode</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2019</td>
+                <td>Intern at ICT academy, Kerala</td>
+                <td>On-site</td>
+                <td>1 month</td>
+            </tr>
+            <tr>
+                <td>2020</td>
+                <td>Intern at Goldman Sachs, Bangalore</td>
+                <td>Virtual</td>
+                <td>1 month</td>
+            </tr>
+        </tbody>
+        <!-- <tfoot></tfoot> -->
+    </table>
+    <hr>
+
+    <!-- use nested tables to have complex layouts but encouraged to use CSS for that -->
+    <h3>Skills</h3>
+    <table cellspacing="10">
+        <thead></thead>
+        <tbody>
+            <tr>
+                <td>C/C++</td>
+                <td>🌟 🌟 🌟 🌟</td>
+            </tr>
+            <tr>
+                <td>RPA/IoT</td>
+                <td>🌟 🌟 🌟 🌟</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>🌟 🌟 🌟</td>
+            </tr>
+            <tr>
+                <td>Drawing</td>
+                <td>🌟 🌟</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <h3>Hobbies</h3>
+    <ol type="1" start="1">
+        <li>Read YA contemporary books</li>
+        <li>play games</li>
+        <ul>
+            <li>Badminton for outdoors</li>
+            <li><a href="https://www.youtube.com/watch?v=EnEaJaWnWDM">Shadow Fight: Arena</a> for mobile gaming 😎</li>
+        </ul>
+        <li>watch netflix</li>
+    </ol>
+
+    <p><a href="ContactInfo.html" target="_blank">Contact Me</a></p>
+</body>
+</html>

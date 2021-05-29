@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <h1>My Contact Details</h1>
+    <h3>Address:</h3>
+    <address>
+        C-Hostel,Room-240, <br>
+        National Institute of Technology Calicut,<br>
+        NIT Campus P.O 673 601,<br>
+        Kozhikode, India
+    </address>
+    
+    <p><strong>email:</strong><em><a href="mailto:myexamplemail@gmail.com"> myexamplemail@gmail.com</a></em><br><strong>Phone:</strong> 12345 67890</p>
+    <hr>
+
+    <p>Enter your details below to add onto the mailing list:</p>
+    <!-- for and id attributes are used to associate label and input tags for JS. Can be avoided by nesting one within the other -->
+    <form action="mailto:myexamplemail@gmail.com" method="POST" enctype="text/plain">
+        <table cellspacing="10">
+            <tr>
+                <td><label for="Name">Your Name:</label></td>
+                <td><input type="text" name="YourName" id="Name"></td>
+            </tr>
+            <tr>
+                <td><label for="mailId">Your Mail ID:</label></td>
+                <td><input type="email" id="mailId" name="YourEmail"></td>
+            </tr>
+            <tr>
+                <td><label for="subscribe">Do you wish to subscribe to our newsletters?</label></td>
+                <td><input type="checkbox" name="Subscribe"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="date" name="DOB"></td>
+            </tr>
+            <tr>
+                <!-- radio buttons choose one among those with the same name -->
+                <td>How often do you wish to get our newsletters?</td>
+                <td>
+                    <label for="">
+                        <input type="radio" name="subscription">Weekly
+                    </label>
+                    <label for="">
+                        <input type="radio" name="subscription">Monthly
+                    </label>
+                    <label for="">
+                        <input type="radio" name="subscription">Yearly
+                    </label>
+                </td>
+            </tr>
+        </table><br>
+
+        <label>Your Message:</label><br>
+        <textarea name="YourMessage" cols="30" rows="10"></textarea><br>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
